@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
 :root {
   --main-bg-color: hsl(233, 47%, 7%);
   --card-bg: hsl(244, 38%, 16%);
@@ -12,28 +14,28 @@
 }
 
 body {
-  height: 800px;
-  width: 1440px;
+  height: 130vh;
+  /* width: 105vw; */
   font-size: 15px;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
+  color: var(--main-paragraph);
+  background-color: black;
 }
 
 h1 {
-  border: 1px solid red;
   font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--main-heading);
 }
 
 h1 span {
   font-size: inherit;
   color: var(--accent-color);
-}
-
-span {
-  font-size: 24px;
 }
 
 img {
@@ -48,7 +50,10 @@ img {
   height: 446px;
   width: 1110px;
   margin-bottom: 25px;
-  border: 1px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  border: none;
 }
 
 .content-container {
@@ -67,28 +72,34 @@ img {
   justify-content: space-around;
   align-items: flex-start;
   text-align: left;
-  border: 1px solid red;
+  border-radius: 8px;
 }
 
-.image-header {
+.image-container {
   flex: 1;
 }
 
 .main-pg {
-  border: 1px solid red;
+  line-height: 26px;
 }
 
 .accolades {
   display: flex;
   align-items: center;
   min-width: 100%;
-  border: 1px solid red;
 }
 
 .accolades p {
-    display: flex;
-    flex-direction: column;
-    margin-right: 25%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+  margin-right: 20%;
+}
+
+.accolades span {
+  color: var(--main-heading);
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /* ATTRIBUTION */
